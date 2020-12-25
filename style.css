@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+/* LOGO */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background: rgb(250, 250, 250);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* *********************************** START ********************************** */
+
+.nav {
+    padding: 1rem 3rem;
+    justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(113, 25, 196);
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.nav-left {
+    position: relative;
+}
+
+.nav_left a {
+    margin: 0 1rem;
+}
+
+/* *************** side bar icon ***************** */
+
+.side_bar {
+    width: 50px;
+}
+
+.side_bar .bar_line {
+    width: 50px;
+    height: 5px;
+    background: #505050;
+    border-radius: 1rem;
+    margin: .3rem 0;
+    transition: all .5s ease-in-out;
+    position: relative;
+}
+
+.side_bar:hover .bar_line {
+    background: #6941d8;
+}
+
+.side_bar .bar_line1 {
+    /* width: 30px; */
+}
+
+.side_bar:hover .bar_line1 {
+    width: 30px;
+    margin-left: 20px;
+}
+
+.side_bar:hover .bar_line2 {
+    width: 30px;
+}
+
+.side_bar .bar_line3 {
+    /* width: 30px; */
+    margin-left: 20px;
+}
+
+.side_bar:hover .bar_line3 {
+    width: 50px;
+    margin-left: 0;
+}
+
+/* *************** side bar icon ***************** */
+
+.search {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    color: #454545;
+    margin-right: 5rem;
+    transition: all .5s ease-in-out;
+}
+
+.search:hover {
+    transform: scale(1.5) rotateZ(90deg) rotateX(180deg);
+    color: #6941d8;
+}
+
+
+/* ****************** main ********************************* */
+
+main {
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: 5fr 10fr 3fr;
+}
+
+main .grid {
+    height: calc(100vh - 82px);
+    /* border: 2px solid; */
+}
+
+main .grid_3 {
+    padding-bottom: 8rem;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.main_left {
+    position: relative;
+}
+
+.discription .p_name{
+    color: #646464;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+.discription .c_name {
+    color: #3a1f83;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: .7rem;
+    margin-bottom: 2rem;
+}
+
+.discription .about_p {
+    color: #6e6e6e;
+    font-size: 1rem;
+}
+
+.discription .colors {
+    margin-top: 2rem;
+}
+
+.colors .circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #6941d8;
+    margin: 0 1rem;
+    box-shadow: 0 1px 3px 2px #00000046;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.colors .circle_1 {
+    margin-left: 0;
+    background: #02ff02;
+}
+
+.colors .circle_3 {
+    background: orangered;
+}
+
+.colors .circle .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+}
+
+.colors .circle:hover .dot{
+    background: #ebebeb;
+    box-shadow: 0 1px 10px 1px #000000b7;
+}
+.colors .circle:hover{
+    transform: scale(1.3);
+}
+
+.colors .circle-a .dot{
+    background: #ebebeb;
+    box-shadow: 0 1px 10px 1px #000000b7;
+}
+
+.discription .price {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #676767;
+    margin: 3rem 0;
+    letter-spacing: .1rem;
+}
+
+.discription .add_to_cart {
+    background: #1a1a1a;
+    height:  60px;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    transition: background .5s ease-in-out;
+    cursor: pointer;
+}
+
+.discription .add_to_cart span {
+    position: relative;
+    top: .3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    z-index: 999;
+}
+
+.discription .add_to_cart .a-c {
+    position: relative;
+    border-radius: 50%;
+    width:  15px;
+    height: 15px;
+    background: #454545;
+    transition: all .5s ease-in-out;
+    /* transform: scale(0); */
+}
+.discription .add_to_cart .a-c1{
+    top: -30px;
+    left: -20px;
+    width: 30px;
+    height: 30px;
+}
+.discription .add_to_cart .a-c2{
+    width: 40px;
+    height: 40px;
+    top: -60px;
+    left: 60px;
+}
+.discription .add_to_cart .a-c3{
+    top: -65px;
+    left: 20px;
+}
+
+.discription .add_to_cart:hover {
+    background: #6941d8;
+}
+.discription .add_to_cart:hover .a-c {
+    transform: scale(0.8);
+    background: #000;
+}
+
+
+
+
+
+
+.product_img .circle_bg_img {
+    position: absolute;
+    top: 5rem;
+    background: linear-gradient(150deg , #02ff02, black 70%);
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    box-shadow: 0 2px 3px 2px #0000009d;
+}
+
+.product_img .circle_on_img {
+    position: relative;
+    background:  rgba(0, 0, 0, 0.2);
+    bottom: 250px;
+    left: 450px;
+    width: 250px;
+    height: 250px;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+}
+
+.product_img .circle_on_img:hover {
+    transform: rotateZ(40deg) scale(1.2);
+}
+
+
+.product_img .circle_on_img .img_dot {
+    position: relative;
+    left: 200px;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(150deg , #02ff02, black 70%);
+}
+
+ .shoe {
+    position: relative;
+    top: 100px;
+    right: 3rem;
+    width: 700px;
+    transition: all .5s ease-in-out;
+}
+
+.shoe-4:hover {
+    transform: rotateY(180deg) rotateZ(25deg);
+}
+
+
+.shoe-4 {
+    transform: rotateY(180deg) rotateZ(30deg);
+}
+
+
+.main_right{
+    position: relative;
+}
+
+.page {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #888888;
+}
+
+.page .page_d {
+    margin: 0 3.2rem;
+}
+
+.page i {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #757575;
+    transition: all .3s ease-in-out;
+}
+
+.page i:hover {
+    color: #6941d8;
+    transform: scale(1.3);
+}
+
+.p-bar {
+    margin-top: 2rem;
+}
+
+.progress {
+    background: #d6d6d6;
+    width: 230px;
+    border-radius: 2rem;
+    height: 15px;
+}
+
+.bar{
+    background: #6941d8;
+    width: 40px;
+    border-radius: 2rem;
+    height: 15px;
+}
